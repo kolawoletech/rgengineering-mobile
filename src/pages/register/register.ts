@@ -57,7 +57,7 @@ export class RegisterPage {
       this.authProvider.signupUser(email, password).then(
         user => {
           this.loading.dismiss().then(() => {
-            this.navCtrl.setRoot('PhonePage');
+            this.navCtrl.push('PhonePage');
           });
         },
         error => {

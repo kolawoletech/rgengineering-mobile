@@ -23,12 +23,7 @@ export class PhonePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PhonePage');
-    this.localStorage.get('phone-set').then(done => {
-      if (!done) {
-        this.localStorage.set('phone-set', true);
-        this.navCtrl.setRoot('PhonePage');
-      }
-    });
+   
   }
 
   confirmPhone() {
@@ -38,7 +33,7 @@ export class PhonePage {
 	    facebookNotificationsEnabled: true
     }, (successdata) => {
       (<any>window).AccountKitPlugin.getAccount((user) => {
-        this.navCtrl.setRoot('SetAddressPage');
+        this.navCtrl.push('SetAddressPage');
       })
       }, (err) => {
         alert(err);
