@@ -50,12 +50,7 @@ export class SetAddressPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SetAddressPage');
-    this.localStorage.get('address-set').then(done => {
-      if (!done) {
-        this.localStorage.set('address-set', true);
-        this.navCtrl.setRoot('TabsPage');
-      }
-    });
+  
   }
   loadMaps() {
     if (!!google) {

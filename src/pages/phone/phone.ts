@@ -22,7 +22,7 @@ export class PhonePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PhonePage');
+    this.confirmPhone();
    
   }
 
@@ -32,7 +32,7 @@ export class PhonePage {
 	    defaultCountryCode: "UK",
 	    facebookNotificationsEnabled: true
     }, (successdata) => {
-      (<any>window).AccountKitPlugin.getAccount((user) => {
+      (<any>window).AccountKitPlugin.getAccount((phone) => {
         this.navCtrl.push('SetAddressPage');
       })
       }, (err) => {

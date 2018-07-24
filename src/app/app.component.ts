@@ -16,7 +16,7 @@ export class MyApp {
     afAuth: AngularFireAuth) {
     afAuth.authState.subscribe(user => {
       if (user) {
-        this.rootPage = 'SetAddressPage';
+        this.rootPage = 'TabsPage';
       } else {
         this.rootPage = 'LoginPage';
       }
