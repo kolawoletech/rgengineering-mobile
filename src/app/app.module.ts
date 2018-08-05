@@ -7,10 +7,9 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
 import { MapProvider } from '../providers/map/map';
 import { SpinnerProvider } from '../providers/spinner/spinner';
-
 import { IonicStorageModule } from '@ionic/storage';
 import { AuthProvider } from '../providers/auth/auth';
 
@@ -22,8 +21,7 @@ import { firebaseConfig } from './credentials';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -37,8 +35,7 @@ import { firebaseConfig } from './credentials';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   providers: [
     HttpModule,

@@ -1,8 +1,8 @@
 export const firebaseConfig ={
-    apiKey: "AIzaSyAKgwMNzJIvYeNJEy99g9sbKint6DyCv_s",
-    authDomain: "accounting-hub.firebaseapp.com",
-    databaseURL: "https://accounting-hub.firebaseio.com",
-    projectId: "accounting-hub",
-    storageBucket: "accounting-hub.appspot.com",
-    messagingSenderId: "981147796796"
+    apiKey: "AIzaSyDOicS3PNywWR3JdO0RgmbOIYya4HClKqc",
+    authDomain: "rgengineering-b394c.firebaseapp.com",
+    databaseURL: "https://rgengineering-b394c.firebaseio.com",
+    projectId: "rgengineering-b394c",
+    storageBucket: "",
+    messagingSenderId: "924137236064"
 }

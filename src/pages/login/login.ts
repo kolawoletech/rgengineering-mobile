@@ -59,7 +59,7 @@ public loading: Loading;
       this.authProvider.loginUser(email, password).then(
         authData => {
           this.loading.dismiss().then(() => {
-            this.navCtrl.push('PhonePage');
+            this.navCtrl.push('TabsPage');
           });
         },
         error => {

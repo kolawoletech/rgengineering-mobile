@@ -90,5 +90,5 @@
         <variable name="CLIENT_TOKEN" value="42999e3eaaa834a1033045cb9db221e4" />
         <variable name="API_VERSION" value="v1.1" />
     </plugin>
-    <engine name="android" spec="~7.0.0" />
+    <engine name="android" spec="7.0.0" />
 </widget>

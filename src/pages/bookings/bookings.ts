@@ -22,4 +22,8 @@ export class BookingsPage {
     console.log('ionViewDidLoad BookingsPage');
   }
 
+  goToBookingForm(){
+    this.navCtrl.push('CreateBookingPage');
+  }
+
 }
